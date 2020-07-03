@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/selectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:textColor="#fff"
+        android:textSize="23dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="48dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_calen"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="320dp"
+            android:layout_gravity="center">
+
+        </CalendarView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addEvent"
+        android:text="Add Event"
+        android:textSize="28sp"
+        android:onClick="AddEvent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_btn"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>
